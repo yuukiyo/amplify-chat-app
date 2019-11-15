@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "amplifyHandson",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authamplifyhandson74f9e5c2",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
