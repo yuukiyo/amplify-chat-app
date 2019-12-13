@@ -1,0 +1,26 @@
+{
+	"auth": {
+		"amplifyhandson269b4c4a": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"api": {
+		"AmplifyHandson": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authamplifyhandson269b4c4a"
+						}
+					}
+				}
+			}
+		}
+	}
+}
